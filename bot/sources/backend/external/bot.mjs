@@ -1,5 +1,4 @@
 import puppeteer from 'puppeteer';
-import sharp from 'sharp';
 
 const browser = await puppeteer.launch({
     headless: true,

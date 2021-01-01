@@ -13,9 +13,7 @@ RUN apt-get install -y gconf-service lsb-release wget xdg-utils
 RUN apt-get install -y fonts-liberation
 
 # NPM installation
-RUN npm install puppeteer@5.3.0
-RUN npm install sharp
+RUN npm install --global --unsafe-perm=true puppeteer@5.3.0
 
 # Copy sources
 COPY sources/backend backend
-COPY sources/frontend frontend
