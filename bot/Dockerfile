@@ -1,5 +1,5 @@
 # Select the base image
-FROM nadavtasher/template
+FROM nadavtasher/template:2021.01.02
 
 # Install puppeteer
 RUN apt-get update
