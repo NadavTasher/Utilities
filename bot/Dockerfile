@@ -11,8 +11,6 @@ RUN apt-get install -y libgbm-dev libappindicator1 libasound2 libatk1.0-0 libc6 
 RUN apt-get install -y gconf-service lsb-release wget xdg-utils
 # Install fonts
 RUN apt-get install -y fonts-liberation
-# Install NPM
-RUN apt-get install -y npm
 
 # Install node-fetch
 RUN npm install --global node-fetch
