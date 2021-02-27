@@ -8,19 +8,6 @@ const browser = await puppeteer.launch({
 // Create page
 const page = await browser.newPage();
 
-// Create viewport configuration
-const viewport = {
-    width: 1024,
-    height: 768
-};
-
-// Set the viewport
-await page.setViewport({
-    width: viewport.width,
-    height: viewport.height,
-    deviceScaleFactor: 1
-});
-
 export default {
     goTo: {
         handler: async (parameters) => {

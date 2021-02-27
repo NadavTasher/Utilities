@@ -1,0 +1,22 @@
+# Select compose version
+version: "3"
+
+# Define services that need to be built
+services:
+    fetch:
+        # Setup builds
+        build: fetch
+        image: nadavtasher/fetch
+
+        # Expose ports
+        ports: 
+            - 8000:80
+
+    puppeteer:
+        # Setup builds
+        build: puppeteer
+        image: nadavtasher/puppeteer
+
+        # Expose ports
+        ports: 
+            - 8001:80
